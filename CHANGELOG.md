@@ -1,4 +1,4 @@
-# ThsLink v0.2.0 · HTTP 查询与长连接便携版
+# ThsLink v0.2.0
 
 下载 `thslink-windows.zip`，解压整个目录，双击 `thslink.exe`。无需安装。
 
