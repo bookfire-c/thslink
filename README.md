@@ -12,6 +12,22 @@ Windows 绿色便携版，解压后双击 `thslink.exe`，无需安装。
 
 [下载最新版](https://github.com/electkismet/thslink/releases/latest) · [完整 HTTP 使用说明](docs/HTTP.md) · [Python 示例](examples/http_demo.py) · [更新记录](CHANGELOG.md) · [许可](LICENSE.md)
 
+## 界面预览
+
+v0.2.0 实际运行界面。账户信息已遮挡；调试页展示生成的示例代码，未发送交易请求。
+
+**桌面快捷下单**
+
+![ThsLink v0.2.0 主窗口：快捷按钮、账户选择与 HTTP 接口开关](docs/images/main.png)
+
+**HTTP 请求生成 / 在线调试**
+
+![HTTP 请求生成与在线调试：选择填写参数并生成 JSON 调用代码](docs/images/http-debug.png)
+
+**HTTP 调用说明**
+
+![HTTP 调用说明：接口路径、参数和回执查询方式](docs/images/http-guide.png)
+
 ## 支持什么
 
 | 功能 | 说明 |
