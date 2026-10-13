@@ -1,5 +1,6 @@
 """ThsLink HTTP 示例。先在软件中打开接口开关；安装依赖 pip install requests。
 直接运行只查询连接和账户，不提交交易。业务程序显式调用 order / batch。
+v0.2.6 起交易必须 notip=True；本示例自动补齐，显式传入其他值会在发送前报错。
 """
 import atexit
 import requests
@@ -23,6 +24,15 @@ def post(path, payload):
     return response.json()
 
 
+def _trading_payload(payload):
+    """补齐必填参数；拒绝其他值，不改动调用方的字典。"""
+    payload = dict(payload)
+    payload.setdefault("notip", True)
+    if payload["notip"] is not True:
+        raise ValueError("交易请求必须填写 notip=True，本次未发送")
+    return payload
+
+
 def order(side, code, price=None, amount=None, **flags):
     payload = {"side": side, "code": code}
     if price is not None:
@@ -30,7 +40,7 @@ def order(side, code, price=None, amount=None, **flags):
     if amount is not None:
         payload["amount"] = amount
     payload.update(flags)
-    return post("/order", payload)
+    return post("/order", _trading_payload(payload))
 
 
 def buy(code, price="mrxjg", amount=None, **flags):
@@ -54,8 +64,9 @@ def cancel_all(**flags):
 
 
 def batch(orders):
-    """一次提交 1～20 笔，每笔是单笔请求 JSON；返回 batch_id。"""
-    return post("/orders/batch", {"orders": orders})
+    """一次提交 1～20 笔；逐笔补齐 notip=True，任一笔无效则整批未发送。"""
+    payloads = [_trading_payload(order) for order in orders]
+    return post("/orders/batch", {"orders": payloads})
 
 
 def order_result(request_id):
