@@ -5,7 +5,7 @@
 ## 下载与启动
 
 - `thslink-windows.zip`：ThsLink 桌面版，解压后运行 `thslink.exe`；虚拟机兼容窗口使用 `兼容运行.bat`。附件与 EXE 保留原技术文件名，以兼容旧版桌面更新器，产品名称为 ThsLink。
-- `ThsLink-Cli-纯接口版.zip`：不包含 GUI 和图形渲染依赖，解压后双击 `启动 ThsLink-Cli(点这个).bat`，也可运行 `ThsLink-Cli.exe`。
+- `ThsLink-Cli-windows.zip`：不包含 GUI 和图形渲染依赖，解压后双击 `启动 ThsLink-Cli(点这个).bat`，也可运行 `ThsLink-Cli.exe`。
 - 两个版本提供相同 HTTP API、使用同版本桥接组件，同一用户会话只能运行其中一个。请先关闭旧 ThsLink 和同花顺交易端，整体替换包后重新登录。
 
 ## 本次更新
