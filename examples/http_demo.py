@@ -1,4 +1,4 @@
-"""ThsLink HTTP 示例。先在软件中打开接口开关；安装依赖 pip install requests。
+"""ThsLink-Cli（纯接口版） HTTP 示例。安装依赖 pip install requests。
 直接运行只查询连接和账户，不提交交易。业务程序显式调用 order / batch。
 v0.2.6 起交易必须 notip=True；本示例自动补齐，显式传入其他值会在发送前报错。
 """

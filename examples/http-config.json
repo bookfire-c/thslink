@@ -1,0 +1,7 @@
+{
+  "host": "127.0.0.1",
+  "port": 8421,
+  "api_key": "",
+  "terminal_path": null,
+  "connect_bridge": true
+}

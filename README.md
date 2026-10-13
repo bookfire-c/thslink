@@ -6,9 +6,9 @@
 
 支持本机、局域网及服务器远程 HTTP 调用：同花顺和 ThsLink 可运行在同一台 Windows 服务器上，你的电脑或另一台服务器通过 VPN 或 HTTPS 入口发送请求，无需处于同一局域网。
 
-Windows 绿色便携版，解压后双击 `thslink.exe`，无需安装。
+Windows 绿色便携版，无需安装。提供 **ThsLink 桌面版** 和 **ThsLink-Cli-纯接口版**；只需 HTTP 接口时选择纯接口版，无图形渲染依赖。
 
-**当前版本：v0.2.6。仅供个人非商业学习与研究，禁止用于任何商业行为。本仓库提供成品和说明，不包含应用源码。**
+**当前版本：v0.2.7。仅供个人非商业学习与研究，禁止用于任何商业行为。本仓库提供成品和说明，不包含应用源码。**
 
 [下载最新版](https://github.com/electkismet/thslink/releases/latest) · [完整 HTTP 使用说明](docs/HTTP.md) · [Python 示例](examples/http_demo.py) · [更新记录](CHANGELOG.md) · [许可](LICENSE.md)
 
@@ -46,6 +46,12 @@ Windows 绿色便携版，解压后双击 `thslink.exe`，无需安装。
 配置保存在 `%APPDATA%/thslink/ui-settings.json`。接口开关会保存，下次启动恢复；升级和移动程序目录不会清空该 Windows 用户的配置。
 
 **从旧版升级，请先退出 ThsLink 和同花顺交易端，整体替换便携包，再重新启动。**不要只换 EXE 或把新旧 DLL 混用。
+
+### 纯接口版
+
+下载 **`ThsLink-Cli-纯接口版.zip`**，解压后先登录同花顺交易端，再双击 **`启动 ThsLink-Cli(点这个).bat`**。也可直接启动 `ThsLink-Cli.exe`。菜单 1 查看状态、2 接口用法、3 连接交易端、4 接口设置、0 退出。菜单 4 可设置地址、端口和密钥，保存后退出重启生效。
+
+纯接口版与桌面版只能运行其中一个，不能作为 Windows Session 0 服务。只检查连接状态，不反复加载 DLL；没有图形驱动依赖，但同花顺仍需要交互桌面。完整说明见 [纯接口版说明](docs/CLI.md)。
 
 ## HTTP 快速上手
 

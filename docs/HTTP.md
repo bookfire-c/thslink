@@ -1,4 +1,6 @@
-# ThsLink 使用说明 · HTTP 调用（v0.2.6）
+# ThsLink 使用说明 · HTTP 调用（v0.2.7）
+
+桌面版 ThsLink 与 ThsLink-Cli-纯接口版共用以下 HTTP 接口。纯接口版启动与菜单配置见随包 `纯HTTP版说明.md`；桌面版从界面设置接口。
 
 ThsLink 仅供个人非商业学习与研究使用，不允许用于商业行为；完整条款见 [项目许可](../LICENSE.md)。
 
