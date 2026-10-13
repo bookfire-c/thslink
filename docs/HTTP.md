@@ -340,7 +340,7 @@ GitHub 更新只在用户手动点击检查时执行，不会启动或定时自�
 
 ## 兼容窗口与查询诊断
 
-普通双击 `thslink.exe` 使用无边框窗口。虚拟机或远程桌面出现黑屏时，先退出 ThsLink，再双击同目录 `compat-window.bat`；也可执行 `thslink.exe --compat-window`，使用系统标题栏窗口。
+普通双击 `thslink.exe` 使用无边框窗口。虚拟机或远程桌面出现黑屏时，先退出 ThsLink，再双击同目录 `兼容运行.bat`；也可执行 `thslink.exe --compat-window`，使用系统标题栏窗口。
 
 主动查询应同时检查 `status`、`complete` 和各账户的 `error`。HTTP 502 或“内部查询未完整结束（返回 8）”表示本次查询失败，不能解释为没有委托；该返回标志的兼容问题尚未确认解决。
 
