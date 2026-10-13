@@ -8,7 +8,7 @@
 
 Windows 绿色便携版，解压后双击 `thslink.exe`，无需安装。
 
-**当前版本：v0.2.2。仅供个人非商业学习与研究，禁止用于任何商业行为。本仓库提供成品和说明，不包含应用源码。**
+**当前版本：v0.2.5。仅供个人非商业学习与研究，禁止用于任何商业行为。本仓库提供成品和说明，不包含应用源码。**
 
 [下载最新版](https://github.com/electkismet/thslink/releases/latest) · [完整 HTTP 使用说明](docs/HTTP.md) · [Python 示例](examples/http_demo.py) · [更新记录](CHANGELOG.md) · [许可](LICENSE.md)
 
@@ -40,6 +40,8 @@ Windows 绿色便携版，解压后双击 `thslink.exe`，无需安装。
 2. 先启动同花顺并登录交易账户，再双击 `thslink.exe`。主程序、`thslink_bridge.dll` 和 `thslink-load.exe` 须放在同一目录。
 3. 运行环境为 Windows 10/11 x64，桥接组件用于 32 位 `xiadan.exe`。内部接口与交易端版本有关，不匹配时会拒绝连接。
 4. 打开主窗口“接口”开关。只用 HTTP 时，可以关闭“手动交易”，暂停自动读票和交易热键。
+
+虚拟机或远程桌面遇到窗口黑屏时，退出 ThsLink 后双击包内 `compat-window.bat`，使用带系统标题栏的兼容窗口。普通双击 EXE 仍使用无边框窗口。兼容模式不保证解决所有显卡或虚拟机渲染问题。
 
 配置保存在 `%APPDATA%/thslink/ui-settings.json`。接口开关会保存，下次启动恢复；升级和移动程序目录不会清空该 Windows 用户的配置。
 
