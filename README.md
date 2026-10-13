@@ -8,7 +8,7 @@
 
 Windows 绿色便携版，解压后双击 `thslink.exe`，无需安装。
 
-**当前版本：v0.2.5。仅供个人非商业学习与研究，禁止用于任何商业行为。本仓库提供成品和说明，不包含应用源码。**
+**当前版本：v0.2.6。仅供个人非商业学习与研究，禁止用于任何商业行为。本仓库提供成品和说明，不包含应用源码。**
 
 [下载最新版](https://github.com/electkismet/thslink/releases/latest) · [完整 HTTP 使用说明](docs/HTTP.md) · [Python 示例](examples/http_demo.py) · [更新记录](CHANGELOG.md) · [许可](LICENSE.md)
 
@@ -49,7 +49,7 @@ Windows 绿色便携版，解压后双击 `thslink.exe`，无需安装。
 
 ## HTTP 快速上手
 
-默认地址：`http://127.0.0.1:8421`。请求体为 JSON，设置密钥后携带 `X-API-Key`。
+默认地址：`http://127.0.0.1:8421`。请求体为 JSON，设置密钥后携带 `X-API-Key`。所有 HTTP 交易请求必须填写 `notip: true`；批量中每笔都要填写，漏填或 false 会在发送前返回 HTTP 400。账户数据查询不需要此参数。
 
 先查持仓，发送到 `POST /query`：
 
