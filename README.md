@@ -8,7 +8,7 @@
 
 Windows 绿色便携版，解压后双击 `thslink.exe`，无需安装。
 
-**当前版本：v0.2.0。仅供个人非商业学习与研究，禁止用于任何商业行为。本仓库提供成品和说明，不包含应用源码。**
+**当前版本：v0.2.1。仅供个人非商业学习与研究，禁止用于任何商业行为。本仓库提供成品和说明，不包含应用源码。**
 
 [下载最新版](https://github.com/electkismet/thslink/releases/latest) · [完整 HTTP 使用说明](docs/HTTP.md) · [Python 示例](examples/http_demo.py) · [更新记录](CHANGELOG.md) · [许可](LICENSE.md)
 
